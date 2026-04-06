@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fancy Dynamic Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Creative Vision">Creative Vision</h1>
+            <p class="subtitle">Showcasing complex design logic and visual fidelity.</p>
+            <a href="#gallery" class="scroll-btn">Explore Works</a>
+        </div>
+        <!-- Abstract gradient backgrounds for the "wow" factor -->
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text-column">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I’m a fourth-year Pharmacy student at Alexandria University with a strong passion for visual creativity. I began learning graphic design in my first year of high school, and the Covid-19 quarantine gave me the time and space to grow this hobby quickly. As someone who naturally loves drawing, moving into digital tools like Photoshop and Illustrator felt like the perfect next step. Today, I consider myself an intermediate designer with a special interest in social media design and illustration.
+                </p>
+                <p class="about-skills">
+                    <strong>Software:</strong> Adobe Illustrator, Canva, Adobe photoshop.
+                </p>
+            </div>
+            <div class="about-image-column">
+                <img src="menna.png" alt="Menna Ashraf" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <main id="gallery" class="gallery-section">
+        <div id="portfolio-container">
+            <!-- Sections, Subtitles, and Grids injected by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Professional Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Fullscreen Image Modal (Lightbox) -->
+    <div class="modal" id="image-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-image-wrapper">
+                <img src="" alt="Full Screen Representation" id="modal-image">
+            </div>
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Floating Interactive Attention Panel -->
+    <div class="floating-panel" id="floating-panel">
+        <div class="panel-inner">
+            <div class="panel-icon">
+                <span class="pulsing-dot"></span>
+                <span class="icon-text">💬</span>
+            </div>
+            <div class="panel-content">
+                <h3>Let's Collaborate!</h3>
+                <p>I'm constantly exploring new ideas. Got a creative project? Let's bring it to life.</p>
+                <a href="mailto:contact@example.com" class="panel-btn">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
